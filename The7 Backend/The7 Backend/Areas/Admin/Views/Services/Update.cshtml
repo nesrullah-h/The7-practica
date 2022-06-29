@@ -1,0 +1,25 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <div class="row">
+              <form class="forms-sample" method="post">
+                    <div class="form-group">
+                      <label asp-for="Icon" >Icon</label>
+                      <input asp-for="Icon" placeholder="Icon">
+                    </div>
+                    <div class="form-group">
+                      <label asp-for="Title">Title</label>
+                      <input asp-for="Title" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                      <label asp-for="Description">Description</label>
+                      <input asp-for="Description" placeholder="Description">
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-dark" asp-controller="Services" asp-action="Index">Back</button>
+              </form>
+    </div>
+</div>
